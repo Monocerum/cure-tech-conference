@@ -363,3 +363,104 @@ nav {
 .venue-desc, .venue-amenities {
     padding-top: 10%;
 }
+
+/* EVENT SCHEDULE */
+.schedule {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 25%;
+    text-align: center;
+    align-items: center;
+
+    .section-header {
+        max-width: 70%;
+    }
+}
+
+.dates-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #FFFFFF;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 5% 0 2% 0;
+
+    p {
+        padding: 0 5%;
+        margin: 0;
+    }
+}
+
+.schedule-desc p {
+    font-size: 0.8rem;
+    font-style: italic;
+    padding-bottom: 2%;
+}
+
+.schedule-item {
+    display: flex;
+    padding: 1% 0;
+    align-items: center;
+    width: 100%;
+}
+
+.schedule-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    text-align: start;
+
+    p {
+        text-align: justify;
+        margin: 0;
+    }
+
+    h3 {
+        font-family: "Philosopher", sans-serif;
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+.schedule-time {
+    text-align: end;
+    padding-right: 5%;
+    width: 80%;
+}
+
+.schedule-time h3 {
+    font-size: 1.5rem;
+}
+
+.no-emphasis {
+    font-weight: normal;
+}
+
+.schedule-highlight {
+    font-weight: bold;
+    color: #CBE3FF;
+}
+
+.schedule-name-desc {
+    font-size: 0.9rem;
+    color: #CBE3FF;
+}
+
+.schedule-speaker {
+    color: #DCD0FF;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 2%;
+}
+
+.schedule-key {
+    color: #001731;
+    background: white;
+    padding: 2%;
+    border-radius: 0.5rem;
+    opacity: 75%;
+}
