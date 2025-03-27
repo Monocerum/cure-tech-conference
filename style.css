@@ -300,4 +300,66 @@ nav {
     font-size: 0.7rem;
 }
 
+/* EVENT VENUE */
+.venue {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 25%;
+    text-align: center;
+    align-items: center;
+    background-image: url(assets/venue-bg.png);
+    background-size: cover;
 
+    .section-header {
+        max-width: 70%;
+    }
+}
+
+.venue-content {
+    iframe {
+        border-radius: 2em;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-top: 5%;
+        width: 100%;
+    }
+}
+
+.venue-img {
+    padding: 1%;
+    border-radius: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 300px;
+}
+
+.venue-hdr {
+    margin-top: 5%;
+    padding: 2% 0;
+    background: linear-gradient(95.74deg, #FFFFFF 76.29%, #999999 169.3%);
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5%;
+    color: black;
+
+    h2 {
+        font-weight: bold;
+    }
+
+    h5 {
+        font-weight: 300;
+        font-size: 1rem;
+    }
+}
+
+.venue-exterior, .venue-interior {
+    margin-top: 5%;
+}
+
+.venue-label {
+    padding-top: 2%;
+    letter-spacing: 2px;
+}
+
+.venue-desc, .venue-amenities {
+    padding-top: 10%;
+}
