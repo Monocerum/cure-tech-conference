@@ -104,6 +104,23 @@ nav {
     transform: scale(1.05);
 }
 
+/* RESPONSIVE STYLES */
+
+@media only screen and (max-width: 500px) { 
+    .hdr-logo-text {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.75rem;
+            letter-spacing: 0;
+        }
+    }
+}
+
+/* HERO SECTION */
+
 .hero {
     background-image: url(assets/hero-bg.png);
     background-repeat: no-repeat;
