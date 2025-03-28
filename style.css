@@ -985,3 +985,62 @@ footer {
         }
     }
 }
+
+/* TERMS & CONDITIONS */
+.terms-and-conditions {
+    padding: 25% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section-header {
+        text-align: center;
+        padding-bottom: 10%;
+    }
+
+    a {
+        color: rgb(192, 217, 255);
+    }
+}
+
+.tnc-item {
+    padding: 5% 0;
+
+    h2 {
+        font-weight: bolder;
+    }
+
+    ol li {
+        font-weight: lighter;
+    }
+}
+
+.return {
+    color: rgb(192, 217, 255);
+    padding: 10%;
+}
+
+@media only screen and (max-width: 500px) { 
+    .terms-and-conditions {
+        .section-heading {
+            font-size: 2.5rem;
+        }
+
+        .section-subheading {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        img {
+            padding-right: 2%;
+        }
+        
+        ol li {
+            font-size: 0.9rem;
+            padding: 5% 0;
+        }
+    }
+}
