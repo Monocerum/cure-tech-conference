@@ -24,6 +24,8 @@ a {
     color: white;
 }
 
+/* NAVIGATION & HEADER */
+
 nav {
     background: linear-gradient(95.71deg, #000000 14.01%, #000230 110.33%);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -68,6 +70,44 @@ nav {
     padding-left: 1%;
 }
 
+.nav-link {
+    text-align: end;
+    --bs-nav-link-color: white;
+}
+
+#registrationNav {
+    background: white;
+
+    a {
+        color: black;
+        font-weight: bold;
+    }
+
+    a:hover, a:focus {
+        color: rgb(14, 0, 77);
+        font-weight: bolder;
+        transition: transform .2s;
+        transform: scale(1.05);
+    }
+}
+
+.nav-link.active {
+    --bs-navbar-active-color: #86acff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: rgb(192, 217, 255);
+    font-weight: 500;
+    transition: transform .2s;
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE STYLES */
+
+/* HERO */
+
 .hero {
     background-image: url(assets/hero-bg.png);
     background-repeat: no-repeat;
@@ -77,6 +117,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10% 0 8% 0;
 }
 
 .hero-content {
@@ -154,6 +195,56 @@ nav {
     display: flex;
     justify-content: flex-end;
     padding-top: 2%;
+}
+
+/* RESPONSIVE STYLES */
+
+@media only screen and (max-width: 1250px) {
+    .hero-text {
+        h1 {
+            font-size: 7rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .hero-design {
+        font-size:  1.5rem;
+    }
+
+    .hero-text {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    
+    .loc-container {
+        h3, .register a {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hero-design {
+        font-size:  1rem;
+    }
+
+    .hero-text {
+        h1 {
+            font-size: 3.5rem;
+        }
+    }
+    
+    .loc-container {
+        h3, .register a {
+            font-size: 0.9rem;
+        }
+    }
 }
 
 /* ABOUT THE CONFERENCE */
@@ -468,6 +559,13 @@ nav {
 /* REGISTER */
 .call-to-action, .register-card {
     display: flex;
+    justify-content: center;
+}
+
+#registration {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
