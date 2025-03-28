@@ -104,10 +104,6 @@ nav {
     transform: scale(1.05);
 }
 
-/* RESPONSIVE STYLES */
-
-/* HERO */
-
 .hero {
     background-image: url(assets/hero-bg.png);
     background-repeat: no-repeat;
@@ -307,6 +303,10 @@ nav {
     }
 }
 
+.article-hdr-text {
+    font-weight: bold;
+}
+
 .article-content {
     text-align: justify;
 }
@@ -323,6 +323,44 @@ nav {
 
 .audience-desc {
     padding-top: 1rem;
+}
+
+/* RESPONSIVE STYLES */
+@media only screen and (max-width: 1550px) {
+    .section-header {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .section-header {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .section-header {
+        max-width: 80%;
+
+        .section-heading {
+            font-size: 3.5rem;
+        }
+
+        .section-subheading {
+            font-size: 1.25rem;
+        }
+    }
+
+    .article-hdr-text {
+        font-size: 1.25em;
+    }
+}
+
+.abt-article {
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* KEY SPEAKERS */
@@ -388,7 +426,15 @@ nav {
 }
 
 .speaker-desc {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+}
+
+/* RESPONSIVE STYLES */
+@media only screen and (max-width: 500px) {
+    .speaker-title, .speaker-desc-text {
+        justify-self: center;
+        max-width: 80%;
+    }
 }
 
 /* EVENT VENUE */
