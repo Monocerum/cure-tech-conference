@@ -1,3 +1,16 @@
+:root {
+    --darkerblue: #000118;
+    --darkblue: #010228;
+    --primary: #000230;
+    --shadow: #00041a40;
+    --tertiary: #85abff;
+    --lightpurple: #DCD0FF;
+    --secondary: #c0d9ff;
+    --lightpurple: #e5ebff;
+    --textcolor: white;
+    --brownishgrey: #999999;
+}
+
 html {
     font-size: 100%;
     box-sizing: border-box;
@@ -6,11 +19,11 @@ html {
 
 * {
     font-family: "Nobile", sans-serif;
-    color: white;
+    color: var(--textcolor);
 }
 
 body {
-    background: linear-gradient(173.04deg, #000000 0%, #000118 25.55%, #010228 111.5%);
+    background: linear-gradient(173.04deg, black 0%, var(--darkerblue) 25.55%, var(--darkblue) 111.5%);
     margin: 0px;
     padding: 0px;
 }
@@ -21,14 +34,14 @@ h1, h2 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--textcolor);
 }
 
 /* NAVIGATION & HEADER */
 
 nav {
-    background: linear-gradient(95.71deg, #000000 14.01%, #000230 110.33%);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(95.71deg, black 14.01%, var(--primary) 110.33%);
+    filter: drop-shadow(0px 4px 4px var(--shadow));
 }
 
 .nav-hdr {
@@ -41,7 +54,7 @@ nav {
 
 .nav-link {
     text-align: end;
-    --bs-nav-link-color: white;
+    --bs-nav-link-color: var(--textcolor);
 }
 
 .hdr-logo {
@@ -72,11 +85,11 @@ nav {
 
 .nav-link {
     text-align: end;
-    --bs-nav-link-color: white;
+    --bs-nav-link-color: var(--textcolor);
 }
 
 #registrationNav {
-    background: white;
+    background: var(--textcolor);
 
     a {
         color: black;
@@ -84,7 +97,7 @@ nav {
     }
 
     a:hover, a:focus {
-        color: rgb(14, 0, 77);
+        color: var(--darkblue);
         font-weight: bolder;
         transition: transform .2s;
         transform: scale(1.05);
@@ -92,13 +105,13 @@ nav {
 }
 
 .nav-link.active {
-    --bs-navbar-active-color: #86acff;
+    --bs-navbar-active-color: var(--tertiary);
     text-decoration: underline;
     font-weight: 500;
 }
 
 .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: rgb(192, 217, 255);
+    color: var(--tertiary);
     font-weight: 500;
     transition: transform .2s;
     transform: scale(1.05);
@@ -147,7 +160,7 @@ nav {
     h1 {
         font-size: 7.5rem;
         font-weight: bold;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-shadow: 0px 4px 4px var(--shadow);
         line-height: 1em;
     }
 
@@ -165,10 +178,10 @@ nav {
 }
 
 .loc-container {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px var(--shadow);
     border-radius: 1rem;
     height: 7rem;
-    background: linear-gradient(91.2deg, rgba(0, 0, 22, 0.8) 1.46%, rgba(0, 0, 0, 0.8) 104.48%);
+    background: linear-gradient(91.2deg, var(--darkerblue) 1.46%, rgba(0, 0, 0, 0.8) 104.48%);
     margin-left: 1.2%;
     display: flex;
     justify-content: space-between;
@@ -179,13 +192,13 @@ nav {
     }
 
     .register {
-        background: white;
+        background: var(--textcolor);
         display: flex;
         align-items: center;
         height: 100%;
         padding: 0 5%;
         border-radius: 0 1rem 1rem 0;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 4px var(--shadow);
 
         a {
             color: black;
@@ -315,11 +328,11 @@ nav {
 }
 
 .article-hdr {
-    background: linear-gradient(95.74deg, #FFFFFF 76.29%, #999999 169.3%);
+    background: linear-gradient(95.74deg, white 76.29%, var(--brownishgrey) 169.3%);
     color: black;
     border-radius: 0.5rem;
     width: 100%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px var(--shadow);
     margin-bottom: 5%;
     
     h3 {
@@ -395,7 +408,7 @@ nav {
     padding: 10% 0;
     text-align: center;
     align-items: center;
-    background: linear-gradient(163.87deg, #FFFFFF 11.22%, #E3E9FF 127.29%);
+    background: linear-gradient(163.87deg, #FFFFFF 11.22%, var(--lightpurple) 127.29%);
     width: 100%;
 
     .section-header {
@@ -413,19 +426,18 @@ nav {
 }
 
 .speaker-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
+    display: grid;
+    grid-template-areas: "card1 card2 card3" "card4 card5 card6";
     padding: 5%;
+    width: 100%;
+    justify-content: center;
 }
 
 .speaker-card {
     max-width: 350px;
-    background: linear-gradient(165.71deg, #000000 -10.53%, #000832 108.79%);
+    background: linear-gradient(165.71deg, black -10.53%, var(--darkblue) 108.79%);
     border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px var(--shadow);
     color: white;
     padding: 6% 3% 2% 3%;
     margin: 5%;
@@ -468,6 +480,18 @@ nav {
     }
 }
 
+@media only screen and (max-width: 1280px) {
+    .speaker-content {
+        grid-template-areas: "card1 card2" "card3 card4" "card5 card6";
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .speaker-content {
+        grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6";
+    }
+}
+
 /* EVENT VENUE */
 .venue {
     display: flex;
@@ -486,7 +510,7 @@ nav {
 .venue-content {
     iframe {
         border-radius: 2em;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 4px var(--shadow);
         margin-top: 5%;
         width: 100%;
     }
@@ -495,17 +519,17 @@ nav {
 .venue-img {
     padding: 1%;
     border-radius: 1em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px var(--shadow);
     width: 300px;
 }
 
 .venue-hdr {
     margin-top: 5%;
     padding: 2% 0;
-    background: linear-gradient(95.74deg, #FFFFFF 76.29%, #999999 169.3%);
+    background: linear-gradient(95.74deg, var(--textcolor) 76.29%, var(--brownishgrey) 169.3%);
     width: 100%;
     border-radius: 0.5rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px var(--shadow);
     margin-bottom: 5%;
 }
 
@@ -571,7 +595,7 @@ nav {
 .dates-container {
     display: flex;
     justify-content: space-between;
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--textcolor);
     width: 100%;
     border-radius: 5px;
     padding: 2%;
@@ -632,16 +656,16 @@ nav {
 
 .schedule-highlight {
     font-weight: bold;
-    color: #CBE3FF;
+    color: var(--secondary);
 }
 
 .schedule-name-desc {
     font-size: 0.9rem;
-    color: #CBE3FF;
+    color: var(--secondary);
 }
 
 .schedule-speaker {
-    color: #DCD0FF;
+    color: var(--lightpurple);
     font-size: 0.9rem;
     font-weight: 300;
     letter-spacing: 2px;
@@ -649,8 +673,8 @@ nav {
 }
 
 .schedule-key {
-    color: #001731;
-    background: white;
+    color: var(--darkblue);
+    background: var(--textcolor);
     padding: 5%;
     border-radius: 0.5rem;
     opacity: 75%;
@@ -721,7 +745,7 @@ nav {
     flex-direction: column;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 5%;
-    background: linear-gradient(128.07deg, #FFFFFF -5.71%, #DFDFDF 126.37%);
+    background: linear-gradient(128.07deg, white -5.71%, #DFDFDF 126.37%);
     border-radius: 1em;
     margin: 10%;
     
@@ -736,7 +760,7 @@ nav {
     }
 
     button {
-        color: white;
+        color: var(--textcolor);
         background: linear-gradient(94.26deg, #000000 -10.61%, #130138 114.06%);
         box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.25);
         letter-spacing: 5px;
@@ -778,7 +802,7 @@ nav {
 
 footer {
     padding: 15% 5% 5% 5%;
-    background: linear-gradient(163.87deg, #FFFFFF 11.22%, #E3E9FF 127.29%);
+    background: linear-gradient(163.87deg, var(--textcolor) 11.22%, var(--lightpurple) 127.29%);
 
     p {
         color: black;
@@ -807,7 +831,7 @@ footer {
 }
 
 .tnc a {
-    color: #0c0044;
+    color: var(--darkblue);
     font-weight: bold;
 }
 
@@ -999,7 +1023,7 @@ footer {
     }
 
     a {
-        color: rgb(192, 217, 255);
+        color: var(--secondary);
     }
 }
 
@@ -1016,7 +1040,7 @@ footer {
 }
 
 .return {
-    color: rgb(192, 217, 255);
+    color: var(--secondary);
     padding: 10%;
 }
 
