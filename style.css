@@ -249,7 +249,15 @@ nav {
 
     .hero-text {
         h1 {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 0.9rem;
         }
     }
     
@@ -741,8 +749,25 @@ nav {
 }
 
 @media only screen and (max-width: 600px) {
+    .hero, .about, .key-speakers, .call-to-action {
+        padding: 20% 2%;
+    }
+
+    .venue, .schedule {
+        padding: 20% 12%;
+    }
+    
+
     .register-card {
         padding: 10%;
+
+        h3, p {
+            padding-right: 5%;
+        }
+
+        button {
+            letter-spacing: 0;
+        }
     }
 }
 
@@ -815,6 +840,11 @@ footer {
     .copyright {
         flex-direction: column;
         align-items: center;
+
+        img {
+            padding: 0;
+            height: 2em;
+        }
     }
 
     .copyright-text {
