@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nobile:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Registration | THE NEW AGE: Emerging Trends and Technologies in Web DEVELOPMENT</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="150">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="nav-hdr">
+                <div class="hdr-logo">
+                    <img src="assets/logo.svg" alt="Logo of Cure Technologies" class="nav-logo">
+                    <div class="hdr-logo-text">
+                        <h2>cure technologies.</h2>
+                        <p>the new age of web development</p>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="nav-container collapse navbar-collapse justify-content-end" id="navMain">
+                <ul class="navbar-nav ms-auto"> 
+                    <li class="nav-item px-3"><a class="nav-link" href="index.html#home">home</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="index.html#about">about</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="index.html#speakers">speakers</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="index.html#venue">venue</a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="index.html#schedule">schedule</a></li>
+                    <li class="nav-item px-3" id="registrationNav"><a class="nav-link" href="index.html#registration">registration</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="registration">
+            <div class="section-header">
+                <h2 class="section-heading">REGISTRATION</h2>
+                <h3 class="section-subheading">THE NEW AGE: EMERGING TRENDS AND TECHNOLOGIES IN WEB DEVELOPMENT</h3>
+                <p class="section-logo"><img src="assets/logo.svg" alt="Logo of CURE Technologies" class="section-logo-img">cure technologies</p>
+            </div>
+            <div class="registration-form">
+                <form action="submit">
+                    <div class="input-container">
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" placeholder="Your First Name" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" placeholder="Your Last Name" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="inputEmail" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="num">Phone Number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="company">Company</label>
+                        <input type="text" name="company" id="company" placeholder="Your Company">
+                    </div>
+                    <div class="input-container" id="selectSource">
+                        <label for="source" class="sourceLabel">Where did you learn about the event?</label>
+                        <select name="source" id="source" class="info">
+                            <option value="social-media">Social Media</option>
+                            <option value="email-invitation">Email</option>
+                            <option value="tech-forum">Tech Forums</option>
+                            <option value="newsletter">Newsletter</option>
+                            <option value="university">University</option>
+                            <option value="recommendation">Recommendation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="btn-container">
+                        <button type="submit" class="submit-btn">REGISTER</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>    
+        <div class="socials">
+            <div class="social">
+                <a href="tel:639123458970"><img src="assets/phone.png" alt="Phone Icon" class="social-logo"></a>
+                <p class="social-label">+63 9123458970</p>
+            </div>
+            <div class="social">
+                <a href="mailto:curetechnologies@gmail.com"><img src="assets/email.png" alt="Mail Icon" class="social-logo"></a>
+                <p class="social-label">curetechnologies@gmail.com</p>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/" target="_blank"><img src="assets/ig-logo.png" alt="Instagram Icon" class="social-logo"></a>
+                <p class="social-label">@curetech</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="assets/fb-logo.png" alt="Facebook Icon" class="social-logo"></a>
+                <p class="social-label">CURE Technologies</p>
+            </div>
+            <div class="social">
+                <a href="https://x.com/?lang=en" target="_blank"><img src="assets/twitter-logo.png" alt="Twitter Icon" class="social-logo"></a>
+                <p class="social-label">@curetech</p>
+            </div>
+        </div>
+        <div class="tnc">
+            <a href="">TERMS AND CONDITIONS</a>
+        </div>
+        <div class="copyright">
+            <img src="assets/logo-black.svg" alt="Logo of CURE Technologies">
+            <div class="copyright-text">
+                <h2>cure technologies</h2>
+                <p>&copy; 2025 CURE TECHNOLOGIES - All Rights Reserved. </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
