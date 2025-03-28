@@ -626,10 +626,58 @@ nav {
 .schedule-key {
     color: #001731;
     background: white;
-    padding: 2%;
+    padding: 5%;
     border-radius: 0.5rem;
     opacity: 75%;
 }
+
+/* RESPONSIVE STYLES */
+@media only screen and (max-width: 1250px) {
+    .schedule {
+        padding: 5% 10%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .schedule-title {
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .schedule-item {
+        display: flex;
+        flex-direction: column;
+        padding: 10% 5%;
+        align-items: center;
+
+        .schedule-name-desc {
+            margin-top: 7%;
+        }
+
+        .schedule-time {
+            padding: 0;
+            width: 100%;
+            text-align: start;
+
+            h3 {
+                font-size: 1.25rem;
+                text-decoration: underline;
+            }
+    
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
 
 /* REGISTER */
 .call-to-action, .register-card {
