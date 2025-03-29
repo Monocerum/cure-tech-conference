@@ -9,6 +9,7 @@
     --lightpurple: #e5ebff;
     --textcolor: white;
     --brownishgrey: #999999;
+    --mainfont: "Nobile", sans-serif;
 }
 
 html {
@@ -18,7 +19,7 @@ html {
 }
 
 * {
-    font-family: "Nobile", sans-serif;
+    font-family: var(--mainfont);
     color: var(--textcolor);
 }
 
@@ -942,7 +943,7 @@ footer {
         padding: 1em;
         border-radius: 1em;
         width: 75%;
-        font-family: "Nobile", sans-serif;
+        font-family: var(--mainfont);
         margin-top: 2%;
     }
 
